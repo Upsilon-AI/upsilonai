@@ -1,0 +1,46 @@
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+
+
+/* Hero section base */
+.hero-section {
+  background: linear-gradient(to right, #cfd856ea, #383737);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 50vh; /* makes it almost full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem; /* some breathing room on all sides */
+}
+
+
+/* Responsive typography overrides (if needed) */
+.hero-title {
+  word-break: break-word;
+
+}
+
+
+.hero-subtitle {
+  word-break: break-word;
+}
+
+  /* Typing animation container */

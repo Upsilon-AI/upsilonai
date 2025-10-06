@@ -1,0 +1,96 @@
+.project-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Alternate background colors for title section */
+.project-card:nth-child(3n + 1) .project-title {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.project-card:nth-child(3n + 2) .project-title {
+  background-color: #a2d243;
+  color: #1a1a1a;
+}
+
+.project-card:nth-child(3n + 3) .project-title {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Title section */
+.project-title {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Description section with image background */
+.project-details {
+  flex: 3;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: brightness(1.0);
+}
+
+.project-details p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+.project-details .demo-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-details .demo-btn:hover {
+  background-color: #dded93;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+.project-details .demo-btn:active {
+  transform: scale(0.97);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-title,
+  .project-details {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .project-details p {
+    margin: 0 auto 1rem;
+  }
+}

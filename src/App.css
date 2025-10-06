@@ -1,0 +1,82 @@
+/* Global layout */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a; /* Deep black text */
+}
+
+/* Container for page content */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0f0f; /* Rich black */
+  padding: 1rem 2rem;
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #22c55e; /* Tailwind green-500 */
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f0fdf4; /* Soft green tint */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #065f46; /* Deep green */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0f0f0f;
+  font-size: 0.9rem;
+  color: #9ca3af; /* Tailwind gray-400 */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+}
