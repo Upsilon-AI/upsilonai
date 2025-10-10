@@ -4,14 +4,18 @@ import "../styles/Careers.css";
 
 function Careers() {
   const positions = [
-    "AI Engineer",
-    "Web Developer",
-    "Backend Developer",
-    "Frontend Developer",
-    "Full Stack Developer",
-    "Research Intern",
-    "Software Intern",
-    "UI/UX Intern",
+    {
+      title: "AI Research Intern",
+      description: "LLMs, Symbolic AI, Scientific ML",
+    },
+    {
+      title: "Software Engineer Intern",
+      description: "Python, TypeScript, ML Ops",
+    },
+    {
+      title: "Product Prototyper",
+      description: "Full-stack, UX, AI agents",
+    },
   ];
 
   return (
@@ -19,7 +23,7 @@ function Careers() {
       <Navbar />
 
       <section className="careers-page">
-        <h1 className="careers-title">Join Our Team</h1>
+        <h1 className="careers-title">Upsilon AI is Hiring</h1>
         <p className="careers-subtitle">
           We're looking for passionate builders, thinkers, and collaborators. Explore our open roles below.
         </p>
@@ -27,11 +31,20 @@ function Careers() {
         <div className="careers-grid">
           {positions.map((role, index) => (
             <div key={index} className="career-card">
-              <h3>{role}</h3>
-              <p>Temporary position · Remote-friendly · Flexible hours</p>
+              <h3>{role.title}</h3>
+              <p>{role.description}</p>
+              <p>Remote or hybrid · Flexible hours</p>
               <button className="apply-btn">Easy Apply</button>
             </div>
           ))}
+        </div>
+
+        <div className="application-info">
+          <h3>How to Apply</h3>
+          <p>
+            Send your GitHub, resume, or demo to{" "}
+            <a href="mailto:nagarjun@upsilonai.co">nagarjun@upsilonai.co</a>
+          </p>
         </div>
       </section>
 

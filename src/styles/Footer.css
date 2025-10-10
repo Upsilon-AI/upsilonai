@@ -30,6 +30,11 @@
   color: #93ce14; /* light green */
   transform: translateY(-2px);
 }
+.footer-contact a {
+  color: white;
+  text-decoration: none; /* optional: removes underline */
+}
+
 
 /* Responsive tweaks for small screens */
 @media (max-width: 480px) {
