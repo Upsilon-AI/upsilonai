@@ -1,6 +1,6 @@
 /* General Page Styling */
 .about-page {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Open Sans', sans-serif;
   background: linear-gradient(to right, #add721, #e5e7eb);
   color: #1f2937;
 }

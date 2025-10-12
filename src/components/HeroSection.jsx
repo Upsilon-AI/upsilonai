@@ -18,7 +18,7 @@ function HeroSection() {
           Collaborate, Build, and Inspire through Technology
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-24">
           <Link to="/projects">
             <button className="bg-white text-indigo-600 px-6 py-3 rounded font-semibold hover:bg-indigo-100 transition">
               Explore Projects

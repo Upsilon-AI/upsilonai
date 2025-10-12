@@ -22,8 +22,8 @@ function Home() {
             loop
             playsInline
           />
-          <div className="video-overlay">
-            <h1 className="video-title">Upsilon AI</h1>
+          <div className="video-overlay" style={{ display: "flex", alignItems: "flex-start", justifyContent: "flex-start" }}>
+            <h1 className="video-title" style={{ textAlign: "left", marginLeft: 100, marginTop: 150}}>Upsilon AI</h1>
           </div>
         </section>
 

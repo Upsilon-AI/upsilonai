@@ -22,18 +22,20 @@
   min-height: 100vh;
   animation: fadeInUp 0.8s ease-out forwards;
   color: #f9fafb;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* ===== Header Section ===== */
+/* Removed header box styling */
 .universities-page header {
   max-width: 800px;
   margin: 0 auto 3rem auto;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .universities-page header h2 {

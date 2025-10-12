@@ -11,7 +11,7 @@ export default {
         white: "#FFFFFF",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
       },
       boxShadow: {
         sm: "0 2px 4px rgba(0,0,0,0.1)",

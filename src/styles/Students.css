@@ -3,12 +3,13 @@
   background: linear-gradient(to right, #87a413, #d2d2ba);
   min-height: 100vh;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .students-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
@@ -27,6 +28,7 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
+  color: #ffffff;
 }
 
 .roadmap-img {

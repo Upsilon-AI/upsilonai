@@ -3,6 +3,7 @@
   text-align: center;
   background: linear-gradient(to right, #9cce37,  #353a3e);
   min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .testimonials-title {
