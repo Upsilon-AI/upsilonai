@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from "framer-motion";
+import { easeInOut, motion, useReducedMotion } from "framer-motion";
 
 const EASE = [0.22, 1, 0.36, 1];
 
@@ -69,7 +69,7 @@ export function Item({ children }) {
   );
 }
 
-export function PageTransition({ children, duration }) {
+export function PageTransition({ children, duration = 0.4 }) {
   const prefersReduced = useReducedMotion();
   const t = prefersReduced ? 0 : duration;
   return (
@@ -77,7 +77,7 @@ export function PageTransition({ children, duration }) {
       initial={{ opacity: 0, x: 12 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -12 }}
-      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.4, ease:easeInOut }}
     >
       {children}
     </motion.main>
